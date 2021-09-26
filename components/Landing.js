@@ -32,6 +32,8 @@ export default function Landing() {
             <a className="nav-item" href="#about">About</a>
             <a className="nav-item" href="#projects">Projects</a>
             <a className="nav-item" href="#social">Social</a>
+            <a className="nav-item" href="#social">Blog</a>
+
           </div>
           {/* This "nav-toggle" hamburger menu is only visible on mobile */}
           {/* You need JavaScript to toggle the "is-active" class on "nav-menu" */}
@@ -47,7 +49,7 @@ export default function Landing() {
             <img className="avatar" src="/img/profile.png" />
           </div>
           <div className="container center"><br />
-            <p className="iam_title">I'm Abdessamad El Hafi</p>
+            <p className="iam_title">I&apos m Abdessamad El Hafi</p>
             <p className="intro">
               Software engineering student at ENSIAS engineering school Rabat, Morocco. I enjoy programming, meditation &amp; making things simpler.
             </p>
@@ -155,7 +157,7 @@ export default function Landing() {
               {/* Project 1 */}
               <div className="column is-half">
                 <div className="box project-text">
-                  <h5 className="title is-5">Curios - find every one's Data in one query. </h5>
+                  <h5 className="title is-5">Curios - find every one&apos s Data in one query. </h5>
                   <article>
                     <div>
                       <figure className="image  project-figure">
@@ -221,7 +223,7 @@ export default function Landing() {
         <section id="social" className="section section-3">
           <div className="container ">
             <div className="has-text-centered">					
-              <h3 className="title is-3">Let's Socialize</h3>
+              <h3 className="title is-3">Let&apos s Socialize</h3>
             </div>
             <div className="columns is-multiline is-desktop is-centered">
               <div className="column is-narrow co-distance">
