@@ -121,11 +121,11 @@ a.nav-item:hover {
 	margin: 0 auto;
   }
   
-  .zoom:hover {
-	-ms-transform: scale(2); /* IE 9 */
-	-webkit-transform: scale(2); /* Safari 3-8 */
+  /* .zoom:hover {
+	-ms-transform: scale(2);
+	-webkit-transform: scale(2); 
 	transform: scale(2); 
-  }
+  } */
 .list {
 	list-style: none;
 	font-family: 'Roboto', sans-serif;
@@ -194,6 +194,122 @@ border-radius: 10%;
 }
 .margin-2{
 	margin: 10px 0 10px 0;
+}
+.mleft-auto{
+	margin-left: auto;
+}
+.mright-auto{
+	margin-right: auto;
+}
+.arrow-button {
+    display: flex;
+    color: #C2FFE9;
+    background-color: #07303D;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+}
+
+.arrow-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #C2FFE9;
+    border-bottom: 2px solid #C2FFE9;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+.arrow-button:hover {
+    background-color: #00d1b2;
+    color: #fff;
+}
+.btn-group{
+	display: flex;
+	width: max-content;
+}
+.btn-group > .arrow-button {
+	margin-left: 5px;
+	margin-right: 5px;
+
+}
+.line{
+	height: 2px;
+	width: 10%;
+	background-color: #a1aaad;
+	margin-top: 7px;
+}
+.section-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#testimonials-section {
+	/* padding: 80px 0;
+    background: #063647;
+	background-size: cover;
+	background-attachment: fixed; */
+	color: #a1aaad;
+}
+.carousel-section {
+	padding: 30px 0;
+  text-align: center;
+}
+.carousel-section .item {
+	/* display: block; */
+	margin: 45px;
+	margin-top: 0;
+	width: 85%;
+	height: auto;
+}
+.cousel-item-content{
+	    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel-section .item p {
+	font-weight: 400;
+	margin: 0 0 30px 0;
+}
+hr {
+    height: 3px;
+    width: 60px;
+    position: relative;
+    background: #a5a5a5;
+    border: 0;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {

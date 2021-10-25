@@ -1,4 +1,21 @@
 import React from 'react'
+import Image from 'next/dist/client/image'
+import profileImage from '../public/img/profile.png';
+import developerImage from '../public/img/developer.png'
+import enterpreneurImage from '../public/img/enterpreneur.png'
+import bridemyMockUp from '../public/img/bridemy-mockup.png'
+import urlMockUp from '../public/img/urlMockup.png'
+import medicalMockUp from '../public/img/medical-mockup.png'
+import curiousMockUp from '../public/img/curios-mockup.png'
+import expressjsIcon from '../public/img/express-js.svg'
+import nextjsIcon from '../public/img/next.svg'
+import mongodbIcon from '../public/img/mongodb.svg'
+import sqlIcon from '../public/img/sql.svg'
+import gitIcon from '../public/img/git.svg'
+import { Testimonial } from './layouts/Testimonial';
+
+
+
 
 export default function Landing() {
     return (
@@ -46,15 +63,15 @@ export default function Landing() {
         {/* About Me */}
         <section id="about" className="section section-1">
           <div className="container has-text-centered">
-            <img className="avatar" src="/img/profile.png" />
+            <Image className="avatar" height={200} width={200} src={profileImage} />
           </div>
           <div className="container center"><br />
             <p className="iam_title">I&apos;m Abdessamad El Hafi</p>
             <p className="intro">
               Software engineering student at ENSIAS engineering school Rabat, Morocco. I enjoy programming, meditation &amp; making things simpler.
             </p>
-            {/* <button class=" button ">hire me </button>
-				<button class="button ">view resume</button> */}
+            {/* <button className=" button ">hire me </button>
+				<button className="button ">view resume</button> */}
           </div>
         </section>
         {/* Education */}
@@ -65,11 +82,12 @@ export default function Landing() {
             </div>
             <div className="columns is-multiline is-desktop">
               <div className="column interest">
-                <img src="/img/developer.png" className="interest-img" alt=""  />
+              <Image className="interest-img" height={200} width={200} src={developerImage} />
+
                 <div className="intrest-text">Web Development</div>
               </div>
               <div className="column interest">
-                <img src="/img/enterpreneur.png" className="interest-img" alt="" />
+              <Image className="interest-img" height={200} width={200} src={enterpreneurImage} />
                 <div className="intrest-text">Interpreneurship</div>
               </div>
             </div>
@@ -89,7 +107,7 @@ export default function Landing() {
                   <article>
                     <div>
                       <figure className="image  project-figure">
-                        <img className="zoom" src="/img/bridemy-mockup.png" alt="Image" />
+                      <Image className="zoom" height={300} width={400} src={bridemyMockUp} />
                       </figure>
                     </div>
                     <div className="center margin-1">
@@ -103,6 +121,14 @@ export default function Landing() {
                         Authenticate, Create/Modify Profile, Create Posts, Comment/Like, Fetch profiles.
                       </p>
                     </div>
+                    <div className={"margin-1 "}>
+                      <div className={"btn-group mleft-auto mright-auto"}>
+                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+
+                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                      </div>
+                      </div>
+                    
                   </article>
                 </div>
               </div>
@@ -113,7 +139,7 @@ export default function Landing() {
                   <article>
                     <div>
                       <figure className="image  project-figure">
-                        <img className="zoom" src="/img/urlMockup.png" alt="Image" />
+                      <Image className="zoom" height={300} width={400} src={urlMockUp} />
                       </figure>
                     </div>
                     <div className="center margin-1">
@@ -128,6 +154,14 @@ export default function Landing() {
                         Shrink a URL ,Authenticate, Save and Manage URL.
                       </p>
                     </div>
+                    <div className={"margin-1"}>
+                    <div className={"btn-group mleft-auto mright-auto"}>
+                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+
+                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                      </div>
+                    </div>
+                   
                   </article>
                 </div>
               </div>
@@ -138,7 +172,7 @@ export default function Landing() {
                   <article>
                     <div>
                       <figure className="image  project-figure">
-                        <img className="zoom" src="/img/medical-mockup.png" alt="Image" />
+                      <Image className="zoom" height={300} width={400} src={medicalMockUp} />
                       </figure>
                     </div>
                     <div className="center margin-1">
@@ -151,6 +185,13 @@ export default function Landing() {
                         Managing appointments ,Consultations, Medical records...
                       </p>
                     </div>
+                    <div className={"margin-1"}>
+                    <div className={"btn-group mleft-auto mright-auto"}>
+                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+
+                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                      </div>
+                    </div>
                   </article>
                 </div>
               </div>
@@ -161,7 +202,7 @@ export default function Landing() {
                   <article>
                     <div>
                       <figure className="image  project-figure">
-                        <img className="zoom" src="/img/curios-mockup.png" alt="Image" />
+                      <Image className="zoom" height={300} width={400} src={curiousMockUp} />
                       </figure>
                     </div>
                     <div className="center margin-1">
@@ -173,6 +214,13 @@ export default function Landing() {
                       <p>
                         Provide LinkedIn username of someone and get his email, phone, experiences ...
                       </p>
+                    </div>
+                    <div className={"margin-1"}>
+                    <div className={"btn-group mleft-auto mright-auto"}>
+                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+
+                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -189,22 +237,22 @@ export default function Landing() {
             <div className="columns is-multiline is-desktop is-centered">
               <div className="column is-narrow co-distance">
                 <i className="fab fa-7x fa-node" />
-                {/* <img src="/img/nodejs.png" class="tech-img" alt="" =""> */}
               </div>
               <div className="column is-narrow co-distance">
-                <embed src="/img/express-js.svg" className="tech-img" />
+              <Image className="tech-img" height={120} width={120} src={expressjsIcon} />
+
               </div> 
               <div className="column is-narrow co-distance">
                 <i className="fab fa-7x fa-react" />
               </div>
               <div className="column is-narrow co-distance">
-                <embed src="/img/next.svg" className="tech-img" />
+                <Image className="tech-img" height={120} width={120} src={nextjsIcon} />
               </div>
               <div className="column is-narrow co-distance">
-                <embed src="/img/mongodb.svg" className="tech-img" />
+                <Image className="tech-img" height={120} width={120} src={mongodbIcon} />
               </div>
               <div className="column is-narrow co-distance">
-                <embed src="/img/sql.svg" className="tech-img" />
+                <Image className="tech-img" height={120} width={120} src={sqlIcon} />
               </div> 
               <div className="column is-narrow co-distance">
                 <i className="fab fa-7x fa-java" />
@@ -213,11 +261,14 @@ export default function Landing() {
                 <i className="fab fa-7x fa-docker" />
               </div>
               <div className="column is-narrow co-distance">
-                {/* <i class="fab fa-4x fa-git"></i> */}
-                <embed src="/img/git.svg" className="tech-img" />
+                <Image className="tech-img" height={120} width={120} src={gitIcon} />
               </div>
             </div>
           </div>
+        </section>
+        {/* testimonial */}
+        <section id="projects" className="section section-2">
+          <Testimonial />
         </section>
         {/* Social */}
         <section id="social" className="section section-3">
@@ -227,22 +278,22 @@ export default function Landing() {
             </div>
             <div className="columns is-multiline is-desktop is-centered">
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" className>
-                  <span className>
+                <a href="https://twitter.com/" >
+                  <span >
                     <i className="fab fa-3x fa-twitter" />
                   </span>
                 </a>							
               </div> 
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" className>
-                  <span className>
+                <a href="https://twitter.com/" >
+                  <span >
                     <i className="fab fa-3x fa-linkedin-in" />
                   </span>
                 </a>							
               </div> 
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" className>
-                  <span className>
+                <a href="https://twitter.com/" >
+                  <span >
                     <i className="fas fa-3x fa-at" />
                   </span>
                 </a>							
