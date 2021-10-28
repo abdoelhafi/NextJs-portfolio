@@ -275,10 +275,6 @@ border-radius: 10%;
 	align-items: center;
 }
 #testimonials-section {
-	/* padding: 80px 0;
-    background: #063647;
-	background-size: cover;
-	background-attachment: fixed; */
 	color: #a1aaad;
 }
 .carousel-section {
@@ -286,7 +282,6 @@ border-radius: 10%;
   text-align: center;
 }
 .carousel-section .item {
-	/* display: block; */
 	margin: 45px;
 	margin-top: 0;
 	width: 85%;

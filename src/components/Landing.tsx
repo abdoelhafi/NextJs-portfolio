@@ -14,9 +14,6 @@ import sqlIcon from '../public/img/sql.svg'
 import gitIcon from '../public/img/git.svg'
 import { Testimonial } from './layouts/Testimonial';
 
-
-
-
 export default function Landing() {
     return (
         <div>
@@ -70,8 +67,6 @@ export default function Landing() {
             <p className="intro">
               Software engineering student at ENSIAS engineering school Rabat, Morocco. I enjoy programming, meditation &amp; making things simpler.
             </p>
-            {/* <button className=" button ">hire me </button>
-				<button className="button ">view resume</button> */}
           </div>
         </section>
         {/* Education */}
