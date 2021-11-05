@@ -201,6 +201,14 @@ border-radius: 10%;
 .mright-auto{
 	margin-right: auto;
 }
+.btn-wrapper{
+	display: flex;
+}
+.span-wrapper{
+	display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
 .arrow-button {
     display: flex;
     color: #C2FFE9;
@@ -255,12 +263,15 @@ border-radius: 10%;
     color: #fff;
 }
 .btn-group{
-	display: flex;
+	flex-flow: wrap;
+    justify-content: center;
 	width: max-content;
 }
 .btn-group > .arrow-button {
 	margin-left: 5px;
 	margin-right: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 
 }
 .line{
@@ -277,6 +288,9 @@ border-radius: 10%;
 #testimonials-section {
 	color: #a1aaad;
 }
+.testifier-name{
+	color: #a1aaad;
+}
 .carousel-section {
 	padding: 30px 0;
   text-align: center;
@@ -284,7 +298,6 @@ border-radius: 10%;
 .carousel-section .item {
 	margin: 45px;
 	margin-top: 0;
-	width: 85%;
 	height: auto;
 }
 .cousel-item-content{

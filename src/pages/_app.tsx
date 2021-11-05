@@ -3,7 +3,6 @@ import Head from 'next/head'
 import { Fragment } from 'react'
 import hackerIcon from '../public/img/hacker.png'
 function MyApp({ Component, pageProps }) {
-  console.log('hacker icon',hackerIcon);
   return (
     <Fragment>
     <Head>

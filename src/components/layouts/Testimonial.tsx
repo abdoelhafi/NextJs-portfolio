@@ -4,6 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 export const Testimonial = () => {
  
   return (
+    <section id="projects" className="section section-2">
+
         <div className="container">
           <div id="testimonials-section" className="text-center">
               
@@ -18,7 +20,7 @@ export const Testimonial = () => {
                         <div className="coursel-item-content">
                         <p>Mr. El Hafi did an amazing work for me and I&apos;m happy and very satisfied with the work.
                           He is professional, a good listeners, great communication skills, highly skilled and knowledgeable. I highly recommend.</p>
-                        <p><strong>marcus sassi</strong>, Founder & CEO
+                        <p><strong className="testifier-name">Mr. Marcus Sassi</strong>, Founder & CEO
                           , Comus.se</p>
                         </div>
                       </div>
@@ -26,7 +28,7 @@ export const Testimonial = () => {
                         <div className="coursel-item-content">
                         <p>Mr. El Hafi did an amazing work for me and I&apos;m happy and very satisfied with the work.
                           He is professional, a good listeners, great communication skills, highly skilled and knowledgeable. I highly recommend.</p>
-                        <p><strong>marcus sassi</strong>, Founder & CEO
+                        <p><strong className="testifier-name">Mr. Marcus Sassi</strong>, Founder & CEO
                           , Comus.se</p>
                         </div>
                       </div>
@@ -43,5 +45,6 @@ export const Testimonial = () => {
                 </div>
             </div>
           </div>
+          </section>
     )
 }
