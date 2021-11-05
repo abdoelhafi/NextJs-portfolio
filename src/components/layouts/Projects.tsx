@@ -4,8 +4,13 @@ import urlMockUp from '../../public/img/urlMockup.png'
 import medicalMockUp from '../../public/img/medical-mockup.png'
 import curiousMockUp from '../../public/img/curios-mockup.png'
 import Image from 'next/dist/client/image'
-
+import { useRouter } from 'next/router'
 export const Projects = () => {
+  const router = useRouter();
+  const bridemyRepo = "https://github.com/abdoelhafi/bridemy";
+  const urlManagerRepo = "https://github.com/abdoelhafi/URLShortenerApp";
+  const medicalOfficeRepo = "https://github.com/abdorah/Cabinet_Medical";
+  const curiousRepo = "https://github.com/abdoelhafi/curious";
     return (
         <section id="projects" className="section section-2">
           <div className="container">
@@ -36,9 +41,9 @@ export const Projects = () => {
                     </div>
                     <div className={"margin-1 btn-wrapper"}>
                       <div className={"btn-group mleft-auto mright-auto"}>
-                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (bridemyRepo, '_ blank')}  className=" arrow-button">preview<span className="arrow"></span></button>
 
-                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (bridemyRepo, '_ blank')}  className="arrow-button">source code<span className="arrow"></span></button>
                       </div>
                       </div>
                     
@@ -69,9 +74,9 @@ export const Projects = () => {
                     </div>
                     <div className={"margin-1 btn-wrapper"}>
                     <div className={"btn-group mleft-auto mright-auto"}>
-                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (urlManagerRepo, '_ blank')}  className=" arrow-button">preview<span className="arrow"></span></button>
 
-                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (urlManagerRepo, '_ blank')}  className="arrow-button">source code<span className="arrow"></span></button>
                       </div>
                     </div>
                    
@@ -100,9 +105,9 @@ export const Projects = () => {
                     </div>
                     <div className={"margin-1 btn-wrapper"}>
                     <div className={"btn-group mleft-auto mright-auto"}>
-                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (medicalOfficeRepo, '_ blank')}  className=" arrow-button">preview<span className="arrow"></span></button>
 
-                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (medicalOfficeRepo, '_ blank')}  className="arrow-button">source code<span className="arrow"></span></button>
                       </div>
                     </div>
                   </article>
@@ -111,7 +116,7 @@ export const Projects = () => {
               {/* Project 1 */}
               <div className="column is-half">
                 <div className="box project-text">
-                  <h5 className="title is-5">Curios - find every one&apos;s Data in one query. </h5>
+                  <h5 className="title is-5">Curious - find every one&apos;s Data in one query. </h5>
                   <article>
                     <div>
                       <figure className="image  project-figure">
@@ -130,9 +135,9 @@ export const Projects = () => {
                     </div>
                     <div className={"margin-1 btn-wrapper"}>
                     <div className={"btn-group mleft-auto mright-auto"}>
-                        <button className=" arrow-button">preview<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (curiousRepo, '_ blank')}  className=" arrow-button">preview<span className="arrow"></span></button>
 
-                        <button className="arrow-button">source code<span className="arrow"></span></button>
+                        <button onClick={()=>window.open (curiousRepo, '_ blank')}  className="arrow-button">source code<span className="arrow"></span></button>
                       </div>
                     </div>
                   </article>

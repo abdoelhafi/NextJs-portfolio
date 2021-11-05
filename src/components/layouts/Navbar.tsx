@@ -22,12 +22,12 @@ export const Navbar = () => {
                     <i className="fab fa-medium-m" />
                 </span>
                 </a>
-                <a href="http://github.com" className="nav-item">
+                <a href="https://github.com/abdoelhafi" className="nav-item">
                 <span className="icon">
                     <i className="fab fa-github" />
                 </span>
                 </a>
-                <a href="https://twitter.com/" className="nav-item">
+                <a href="https://twitter.com/abdo_hafi" className="nav-item">
                 <span className="icon">
                     <i className="fab fa-twitter" />
                 </span>
@@ -37,7 +37,7 @@ export const Navbar = () => {
                 <a className="nav-item" href="#about">About</a>
                 <a className="nav-item" href="#projects">Projects</a>
                 <a className="nav-item" href="#social">Social</a>
-                <a className="nav-item" href="#social">Blog</a>
+                <a className="nav-item" href="#">Blog</a>
 
             </div>
             {/* This "nav-toggle" hamburger menu is only visible on mobile */}

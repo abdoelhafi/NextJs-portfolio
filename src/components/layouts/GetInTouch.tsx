@@ -9,21 +9,21 @@ export const GetInTouch = ()=> {
             </div>
             <div className="columns is-multiline is-desktop is-centered">
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" >
+                <a href="https://twitter.com/abdo_hafi" >
                   <span >
                     <i className="fab fa-3x fa-twitter" />
                   </span>
                 </a>							
               </div> 
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" >
+                <a href="https://www.linkedin.com/in/el-hafi/" >
                   <span >
                     <i className="fab fa-3x fa-linkedin-in" />
                   </span>
                 </a>							
               </div> 
               <div className="column is-narrow co-distance">
-                <a href="https://twitter.com/" >
+                <a href="mailto:elhafiabdessamad1@gmail.com" >
                   <span >
                     <i className="fas fa-3x fa-at" />
                   </span>
